@@ -164,6 +164,7 @@ ul {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-stroke: 4px transparent;
+    margin-right: 0;
 }
 
 .circle::after {
@@ -1279,7 +1280,7 @@ left: 110px;
         width: 350px;
     }
     .circle::after {
-        right: -32px;
+        right: -40px;
         bottom: -10px;  
     }
 .date-dec{
