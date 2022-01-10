@@ -1222,6 +1222,9 @@ left: 110px;
 }
 
 @media only screen and (max-width:578px){
+    .f-right form .form-btn{
+        margin-left: 0;
+    }
     .card-abs1{
         left: 0;
         top: 270px;
