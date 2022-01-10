@@ -4,17 +4,59 @@ const openMenu = document.querySelector('.open-men').addEventListener('click', (
 });
 
 
-function displayWatch(){
-    var t = new Date();
-    const day = document.querySelector('.day').innerHTML = t.getDay();
-    const hours = document.querySelector('.hours').innerHTML = t.getHours();
-    const secs = document.querySelector('.min').innerHTML = t.getMinutes();
+// function displayWatch(){
+//     var t = new Date();
+//     const day = document.querySelector('.day').innerHTML 
+//     const hours = document.querySelector('.hours').innerHTML 
+//     const secs = document.querySelector('.min').innerHTML 
+// }
+
+// window.load = displayWatch();
+// setInterval(function(){
+// displayWatch();
+// },500);
+
+var numberOfDays = 3;
+var today = new Date();
+var start = getNextStartDate(today);
+var end = getNextEndDate(today);
+
+var timer = setInterval(function() {
+  var differenceTime, dd, hh, mm, ss, str;
+  var now = new Date();
+  if (now >= end) {
+    start = getNextStartDate(now);
+    end = getNextEndDate(now);
+  } else {
+    differenceTime = end - now;
+
+    dd = parseInt(differenceTime / (1000 * 60 * 60 * 24));
+    hh = parseInt(differenceTime / (60 * 60 * 1000)) % 24;
+    mm = parseInt(differenceTime / (1000 * 60)) % 60;
+
+    document.querySelector('.day').innerHTML = format(dd);
+    document.querySelector('.hours').innerHTML = format(hh);
+    document.querySelector('.min').innerHTML = format(mm);
+
+  }
+}, 1000);
+
+function getNextEndDate(fromDate) {
+  return new Date(fromDate.getFullYear(), fromDate.getMonth(), fromDate.getDate() + numberOfDays);
 }
 
-window.load = displayWatch();
-setInterval(function(){
-displayWatch();
-},500);
+function getNextStartDate(currentDate) {
+  var currentDay = currentDate.getDate();
+  var index = Math.ceil(currentDay / 3);
+  var nextStartDay = 1 + numberOfDays * index
+  return new Date(currentDate.getFullYear(), currentDate.getMonth(), nextStartDay);
+}
+
+function format(num) {
+  return (9 < num) ? num : "0" + num;
+}
+
+
 
 
 
