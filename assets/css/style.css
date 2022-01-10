@@ -470,6 +470,10 @@ transform: matrix(1, 0, 0, -1, 0, 0);
     line-height: 17px;
 }
 
+.bonus-alt ul li{
+    white-space: nowrap;
+}
+
 .bonus-alt ul li .gradi {
     font-style: normal;
     font-weight: normal;
