@@ -3,19 +3,6 @@ const openMenu = document.querySelector('.open-men').addEventListener('click', (
   openList.classList.toggle('active');
 });
 
-
-// function displayWatch(){
-//     var t = new Date();
-//     const day = document.querySelector('.day').innerHTML 
-//     const hours = document.querySelector('.hours').innerHTML 
-//     const secs = document.querySelector('.min').innerHTML 
-// }
-
-// window.load = displayWatch();
-// setInterval(function(){
-// displayWatch();
-// },500);
-
 var numberOfDays = 3;
 var today = new Date();
 var start = getNextStartDate(today);
