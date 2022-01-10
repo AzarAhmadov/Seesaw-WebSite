@@ -473,7 +473,12 @@ transform: matrix(1, 0, 0, -1, 0, 0);
 .bonus-alt ul li{
     white-space: nowrap;
 }
-
+.paper{
+    padding-top: 0 !important;
+    margin-top: 180px !important;
+    padding-bottom: 207px !important;
+    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 100%) !important;
+}
 .bonus-alt ul li .gradi {
     font-style: normal;
     font-weight: normal;
@@ -558,6 +563,20 @@ transform: matrix(1, 0, 0, -1, 0, 0);
 #card {
     background: var(--white-color);
     margin-top: 153px;
+    position: relative;
+}
+
+.card-abs1{
+    position: absolute;
+    left: 0;
+    top: 570px;
+  
+}
+
+.card-abs2{
+    position: absolute;
+    right: 80px;
+    top: 763px;
 }
 
 .card-content {
@@ -1049,6 +1068,16 @@ span {
 /* responsive */
 
 @media only screen and (max-width:991px){
+    .card-abs1{
+        left: 0;
+        top: 470px;
+            width: 158px;
+    }
+    
+    .card-abs2{
+        right: 0px;
+        top: 443px;
+    }
     .open-men{
         display: block;
     }
@@ -1129,6 +1158,12 @@ line-height: 100px;
 .abs-1{
 left: 110px;
 }
+.c-p{
+    text-align: center;
+}
+.p-c{
+    justify-content: center;
+}
 }
 
 @media only screen and (max-width:768px){
@@ -1186,6 +1221,17 @@ left: 110px;
 }
 
 @media only screen and (max-width:578px){
+    .card-abs1{
+        left: 0;
+        top: 270px;
+            width: 118px;
+    }
+    
+    .card-abs2{
+        right: 0px;
+        top: 573px;
+        width:134px;
+    }
     .open-men{
         position: absolute;
         top: 28px;
@@ -1248,7 +1294,13 @@ form .form-btn{
 margin-top: 58px !important;
 }
 .p-content p{
-    padding-top: 50px;
+    padding-top: 20px;
+    font-size: 27px;
+    line-height: 37px;
+}
+.paper{
+    padding-bottom: 153px !important;
+margin-top: 110px !important;
 }
 .d-left h3{
     font-size: 40px;
