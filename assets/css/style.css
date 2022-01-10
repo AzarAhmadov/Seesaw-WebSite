@@ -1019,6 +1019,7 @@ span {
     width: 131px;
     height: 49px;
     border: none;
+    margin-left: 10px;
 }
 
 /* responsive */
@@ -1212,6 +1213,7 @@ left: 110px;
 }
 
 form .form-btn{
+   
     margin-top: 15px;
 }
 .about-item p{
