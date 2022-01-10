@@ -350,6 +350,18 @@ transform: matrix(1, 0, 0, -1, 0, 0);
     z-index: 90;
 }
 
+.number-abs{
+    position: absolute;
+    top: 0;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+}
+
+.number-abs img{
+    width: 100%;
+}
+
 #bonus .container {
     background: radial-gradient(92.96% 166.89% at 60.07% -50%, rgba(252, 87, 110, 0.6) 0%, rgba(128, 128, 128, 0) 100%),
     radial-gradient(134.65% 291.86% at 83.4% 69.66%, rgba(0, 223, 255, 0.1) 0%, rgba(128, 128, 128, 0) 100%),
@@ -1172,9 +1184,9 @@ left: 110px;
         padding-bottom: 60px;
         margin-top: 38px;
         background: linear-gradient(
-            360deg,
-             #0000005d 0%, rgba(0, 0, 0, 0.808) 100%);
-           }
+        360deg,
+        #0000005d 0%, rgba(0, 0, 0, 0.808) 100%);
+        }
     .m-grid{
         grid-template-columns: repeat(2,180px);
     }
