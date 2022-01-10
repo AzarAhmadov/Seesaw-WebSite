@@ -1034,6 +1034,14 @@ span {
     margin-left: 10px;
 }
 
+.swiper-wrapper{
+    padding-bottom: 50px;
+}
+
+.swiper-pagination-bullet{
+    background: #fff !important;
+}
+
 /* responsive */
 
 @media only screen and (max-width:991px){

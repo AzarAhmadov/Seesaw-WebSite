@@ -1,3 +1,4 @@
+
 function displayWatch(){
     var t = new Date();
     const day = document.querySelector('.day').innerHTML = t.getDay();
@@ -14,4 +15,5 @@ const openList = document.querySelector('.mobil-menu');
 const openMenu = document.querySelector('.open-men').addEventListener('click', () => {
   openList.classList.toggle('active');
 })
+
 
