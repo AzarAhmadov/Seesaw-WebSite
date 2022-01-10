@@ -1279,7 +1279,7 @@ left: 110px;
         width: 350px;
     }
     .circle::after {
-        right: -22px;
+        right: -32px;
         bottom: -10px;  
     }
 .date-dec{
