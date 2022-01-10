@@ -56,8 +56,12 @@ p {
 }
 
 #header {
+    position: relative;
+    z-index: 1000;
     padding-top: 34px;
 }
+
+
 
 
 ul {
@@ -112,7 +116,7 @@ ul {
 
 .back-svg svg {
     width: 100%;
-    max-height: 1250px;
+    max-height: 1260px;
 }
 
 .time-center {
@@ -237,6 +241,16 @@ ul {
     padding-bottom: 5px;
 }
 
+.gradinet-effekt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height:300px ;
+    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+transform: matrix(1, 0, 0, -1, 0, 0);
+}
 
 .mobil-menu ul li a{
     
@@ -283,6 +297,7 @@ ul {
     z-index: 10;
     padding-top: 250px;
     padding-bottom: 153px;
+    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .p-left {
@@ -331,6 +346,8 @@ ul {
 
 #bonus {
     border-radius: 36px;
+    position: relative;
+    z-index: 90;
 }
 
 #bonus .container {
@@ -422,9 +439,7 @@ ul {
 .bonus-alt ul li .ber {
     line-height: 0;
 }
-.bonus-alt ul li {
-    white-space: nowrap;
-}
+
 .bonus-alt ul li .spantwo {
     color: #919596;
     font-style: italic;
@@ -1152,7 +1167,7 @@ left: 110px;
     #paper{
         padding-top: 150px;
         padding-bottom: 60px;
-    }
+           }
     .m-grid{
         grid-template-columns: repeat(2,180px);
     }
