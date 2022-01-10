@@ -9,3 +9,8 @@ window.load = displayWatch();
 setInterval(function(){
 displayWatch();
 },500);
+
+const openList = document.querySelector('.mobil-menu');
+const openMenu = document.querySelector('.open-men').addEventListener('click', () => {
+  openList.classList.toggle('active');
+})
