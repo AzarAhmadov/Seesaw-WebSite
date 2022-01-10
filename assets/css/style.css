@@ -432,13 +432,7 @@ transform: matrix(1, 0, 0, -1, 0, 0);
     font-weight: normal;
     font-size: 84px;
     line-height: 84px;
-    color: #000;
-    background: linear-gradient(254.11deg, rgba(0, 223, 255, 0.67) 35.65%, #FC576E 96.27%),
-        linear-gradient(265.67deg, rgba(255, 255, 255, 0.9) 14.13%, rgba(255, 255, 255, 0) 58.6%);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-stroke: 4px transparent;
+    color: #fff;
     margin-bottom: 33px;
     font-family: helvati regular;
 }
@@ -1182,6 +1176,7 @@ left: 110px;
     }
  .number-bonus{
      padding-top: 50px;
+     font-size: 45px;
  }    
     .number-bonus span{
         font-size: 50px;
@@ -1277,10 +1272,11 @@ left: 110px;
         margin-top: 0px;
     }
     .time-area{
-        width: 350px;
+        width: 100%;
     }
     .circle::after {
-        right: -40px;
+        right: -28px;
+        font-size: 93px;
         bottom: -10px;  
     }
 .date-dec{
