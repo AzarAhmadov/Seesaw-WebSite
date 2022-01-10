@@ -337,13 +337,20 @@ transform: matrix(1, 0, 0, -1, 0, 0);
     font-family: helvati bold;
 }
 
-.p-content p span {
+.p-content p .lin1 {
     background: linear-gradient(262.5deg, rgba(0, 223, 255, 0.67) -26.7%, #FC576E 114.25%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.p-content p .lin2{
+    background: linear-gradient(78.43deg, rgba(0, 223, 255, 0.67) -21.06%, #FC576E 111.58%);
 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
 #bonus {
     border-radius: 36px;
     position: relative;
@@ -563,6 +570,11 @@ transform: matrix(1, 0, 0, -1, 0, 0);
     font-size: 30px;
     line-height: 36px;
     font-family: helvati regular;
+    background: linear-gradient(262.64deg, #00DFFF -72.72%, #FC576E 142.37%);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .card-content P {
