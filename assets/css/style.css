@@ -359,7 +359,7 @@ transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
 .number-abs img{
-    width: 100%;
+    max-width: 100%;
 }
 
 #bonus .container {
