@@ -1404,7 +1404,10 @@ color:#ECECEC;
                                         <span>1%</span>
                                         <span>1%</span>
                                     </div>
+                                   <div class="border-abs">
                                     <span class="border"></span>
+                                    <span class="border-top"></span>
+                                   </div>
                                 </div>
 
                                 <div class="buy-item">
@@ -1415,7 +1418,10 @@ color:#ECECEC;
                                         <span>1%</span>
                                         <span>1%</span>
                                     </div>
-                                    <span class="border"></span>
+                                    <div class="border-abs">
+                                        <span class="border"></span>
+                                        <span class="border-top"></span>
+                                       </div>
                                 </div>
 
                                 <div class="buy-item">
@@ -1426,7 +1432,10 @@ color:#ECECEC;
                                         <span>1%</span>
                                         <span>1%</span>
                                     </div>
-                                    <span class="border"></span>
+                                    <div class="border-abs">
+                                        <span class="border"></span>
+                                        <span class="border-top"></span>
+                                       </div>
                                 </div>
                             </div>
                             <div class="buy">
@@ -1441,7 +1450,10 @@ color:#ECECEC;
                                         <span>1%</span>
                                         <span>1%</span>
                                     </div>
-                                    <span class="border"></span>
+                                    <div class="border-abs">
+                                        <span class="border"></span>
+                                        <span class="border-top"></span>
+                                       </div>
                                 </div>
 
                                 <div class="buy-item">
@@ -1452,7 +1464,10 @@ color:#ECECEC;
                                         <span>3%</span>
                                         <span>1%</span>
                                     </div>
-                                    <span class="border"></span>
+                                    <div class="border-abs">
+                                        <span class="border"></span>
+                                        <span class="border-top b-u"></span>
+                                       </div>
                                 </div>
 
                                 <div class="buy-item">
@@ -1463,7 +1478,10 @@ color:#ECECEC;
                                         <span>1%</span>
                                         <span>1%</span>
                                     </div>
-                                    <span class="border"></span>
+                                    <div class="border-abs">
+                                        <span class="border"></span>
+                                        <span class="border-top"></span>
+                                       </div>
                                 </div>
                             </div>
                         </div>
@@ -1722,7 +1740,7 @@ color:#ECECEC;
                                 <option>Country</option>
                                 <option>Country</option>
                               </select>
-                              <button type="submit" class="btn-form"> Submit </button>
+                                     <button type="submit" class="btn-form"> Submit </button>
                            </form>
                         </div>
                     </div>
@@ -1731,6 +1749,10 @@ color:#ECECEC;
 
         </section>
     </main>
+
+    <button onclick="topFunction()" id="myBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z"></path></svg>
+    </button>
 
     <footer id="footer">
         <div class="container">
@@ -1765,9 +1787,9 @@ color:#ECECEC;
     <script>
         var swiper = new Swiper(".mySwiper", {
             spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      dynamicBullets: true,
+           pagination: {
+           el: ".swiper-pagination",
+          dynamicBullets: true,
     },
   });
     </script>

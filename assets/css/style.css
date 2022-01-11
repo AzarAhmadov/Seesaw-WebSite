@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -389,6 +390,7 @@ transform: matrix(1, 0, 0, -1, 0, 0);
     line-height: 52px;
     letter-spacing: -0.14px;
     font-family: helvati bold;
+    margin-right: 0;
 }
 
 .b-left {
@@ -435,6 +437,14 @@ transform: matrix(1, 0, 0, -1, 0, 0);
     color: #fff;
     margin-bottom: 33px;
     font-family: helvati regular;
+    color: #000000;
+    background: linear-gradient(254.11deg, rgba(0, 223, 255, 0.67) 35.65%, #FC576E 96.27%),
+    linear-gradient(265.67deg, rgba(255, 255, 255, 0.9) 14.13%, rgba(255, 255, 255, 0) 58.6%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke: 4px transparent;
+    margin-right: 0;
 }
 
 .bonus-alt ul li {
@@ -829,21 +839,29 @@ span {
     background: #808080;
     opacity: 0.2;
     border-radius: 50px;
-    transform: matrix(1, 0, 0, -1, 0, 0);
     border: none;
     position: relative;
 }
 
-.border::after {
+
+.border-top{
     content: "";
+    opacity: 0.9 ;
     position: absolute;
     top: 0;
     width: 10px;
-    height: 6px;
+    height: 5px;
     left: 0;
-    background: linear-gradient(262.5deg, rgba(0, 223, 255, 0.67) -26.7%, #FC576E 114.25%);
+    border-radius: 100px;
+    background: #fff;
+}
 
+.border-abs{
+    position: relative;
+}
 
+.border-abs .b-u{
+    width: 20px;
 }
 
 .dl-item h4 {
@@ -1162,6 +1180,16 @@ margin-top: 21px;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+}
+
+#myBtn{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    border: none;
+    padding: 5px;
+    z-index: 3000;
 }
 
 
