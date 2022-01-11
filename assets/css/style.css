@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400&family=Roboto+Slab:wght@100;200;300&family=Roboto:wght@300&family=Source+Code+Pro:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@500;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -744,7 +744,7 @@ span {
 .total-sale {
     margin-bottom: 50px;
     padding-bottom: 14px;
-    border-bottom: 1px solid #919596;
+    border-bottom: 1px solid #8080807a;;
 }
 
 .total-sale:last-child {
@@ -1007,6 +1007,7 @@ span {
 #footer {
     background: var(--white-color);
     padding: 43px 0;
+    margin-top: 115px;
 }
 
 .f-left nav {
@@ -1060,6 +1061,109 @@ span {
 .swiper-pagination-bullet{
     background: #fff !important;
 }
+
+.form-area{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    border: 1px solid #4E4E4E;
+box-sizing: border-box;
+border-radius: 10px;
+width: 
+722px;
+padding-top: 52px;
+padding-bottom: 51px;
+}
+
+.about-item span{
+    margin-right: 0;
+}
+
+.f-content{
+    text-align: center;
+}
+.f-content h3{
+background: linear-gradient(262.64deg, #00DFFF -72.72%, #FC576E 142.37%);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 52px;
+font-family: 'Roboto', sans-serif;
+letter-spacing: -0.14px
+}
+
+.f-content .c-decs{
+    font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 140%;
+text-align: center;
+color: #FFFFFF;
+padding-bottom: 42px;
+}
+
+.form-area form .f-i{
+    background: #000000;
+border: 1px solid #4E4E4E;
+border-radius: 10px;
+width: 283px;
+height: 44px;
+padding-left: 18px;
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 140%;
+color: #808080;
+}
+
+.form-area form  .f-m{
+    margin-right: 28px;
+}
+
+.form-area form .top-form{
+    margin-bottom: 21px;
+}
+
+.form-area form .select{
+    margin-top: 21px;
+    width: 100% !important;
+    appearance: none;
+    background: url('../images/Group\ 294.png');
+    background-repeat: no-repeat;
+    background-position: 97% center
+}
+
+.form-area form .btn-form{
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 24px;
+    background: #FFFFFF;
+border-radius: 10px;
+color: #000000;
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 140%;
+border: none;
+width: max-content;
+margin-top: 21px;
+}
+
+.form-area form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
 
 /* responsive */
 
@@ -1163,7 +1267,17 @@ left: 110px;
 }
 
 @media only screen and (max-width:768px){
-  
+
+  .form-area{
+      width: 98%;
+  }
+  .form-area form .f-i{
+    width: 200px !important; 
+}
+
+.form-area form .select{
+    width: 100% !important;
+}
     .time-area .time {
         width: 150px;
     }
@@ -1218,6 +1332,29 @@ left: 110px;
 }
 
 @media only screen and (max-width:578px){
+    .form-area form .top-form{
+        margin-bottom: 0;
+    }
+    .form-area form .f-i{
+        margin-bottom: 14px;
+        width: 300px !important;
+    }
+    .form-area form  .select{
+        margin-top: 0;
+    }
+    .form-area form div{
+    flex-direction: column;
+    display: flex;
+    }
+    .form-area form  .f-m{
+        margin-right: 0;
+    }
+    .f-content h3{
+        font-size: 34px;
+    }
+    .f-content .c-decs{
+        font-size: 14px;
+    }
     .f-right form .form-btn{
         margin-left: 0;
     }
