@@ -120,11 +120,17 @@ ul {
     max-height: 1260px;
 }
 
+
 .time-center {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+        border: 2px;
+    border-style: solid;
+    border-color: white;
+    padding: 100px;
 }
 
 .time-center h1 {
